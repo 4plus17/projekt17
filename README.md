@@ -5,3 +5,4 @@
 - [Einkaufsliste](shoppinglist.md)
 - Models
 - Dokumentation
+- [Verkabelung für den Raspberry Pi](pi_cables.md)
