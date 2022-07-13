@@ -1,6 +1,7 @@
 # Software für den Raspberry Pi
 
-Der Raspberry Pi wurde mit dem [Pi Imager](https://www.raspberrypi.com/software/) aufgesetzt.
+Der Raspberry Pi wurde mit dem [Pi Imager](https://www.raspberrypi.com/software/) aufgesetzt.  
+Update:
 ```
 sudo apt-get update
 
