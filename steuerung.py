@@ -135,8 +135,7 @@ while True:
       # Dem Programm L298NHBridge welches zu beginn  
       # importiert wurde wird die Geschwindigkeit fuer 
       # die linken und rechten Motoren uebergeben.
-      HBridge.setMotorLeft(speedleft)
-      HBridge.setMotorRight(speedright)
+      HBridge.setMotor(speedleft)
       printscreen()
 
    # Das Roboter-Auto faehrt rueckwaerts wenn die Taste "s" 
@@ -156,16 +155,14 @@ while True:
       # Dem Programm L298NHBridge welches zu beginn  
       # importiert wurde wird die Geschwindigkeit fuer 
       # die linken und rechten Motoren uebergeben.      
-      HBridge.setMotorLeft(speedleft)
-      HBridge.setMotorRight(speedright)
+      HBridge.setMotor(speedleft)
       printscreen()
 
     # mit dem druecken der Taste "q" werden die Motoren angehalten
    if(char == "q"):
       speedleft = 0
       speedright = 0
-      HBridge.setMotorLeft(0)
-      HBridge.setMotorRight(0)
+      HBridge.setMotor(0)
       printscreen()
 
    # Mit der Taste "d" lenkt das Auto nach rechts bis die max/min
@@ -180,8 +177,7 @@ while True:
       if speedleft > 1:
          speedleft = 1
       
-      HBridge.setMotorLeft(speedleft)
-      HBridge.setMotorRight(speedright)
+      HBridge.setMotor(speedleft)
       printscreen()
       
    # Mit der Taste "a" lenkt das Auto nach links bis die max/min
@@ -196,16 +192,14 @@ while True:
       if speedright > 1:
          speedright = 1
       
-      HBridge.setMotorLeft(speedleft)
-      HBridge.setMotorRight(speedright)
+      HBridge.setMotor(speedleft)
       printscreen()
       
    # Mit der Taste "x" wird die Endlosschleife beendet 
    # und das Programm wird ebenfalls beendet. Zum Schluss wird 
    # noch die Funktion exit() aufgerufen die die Motoren stoppt.
    if(char == "x"):
-      HBridge.setMotorLeft(0)
-      HBridge.setMotorRight(0)
+      HBridge.setMotor(0)
       HBridge.exit()
       print("Program Ended")
       break
