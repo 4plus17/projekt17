@@ -8,6 +8,12 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+Installation 06.08.22 auf RPi 4 (4GB):
+Raspberry Pi OS Lite (64 Bit)
+Hostname: projekt17.local
+Nutzername: admin
+Passwort: 17
+
 ## Installierte Tools
 - [AdafruitPCA-9685](https://tutorials-raspberrypi.de/mehrere-servo-motoren-steuern-raspberry-pi-pca9685/)
 - [PiTunnel](https://www.pitunnel.com/)
