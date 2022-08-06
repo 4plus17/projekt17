@@ -19,3 +19,4 @@ Passwort: 17
 - [PiTunnel](https://www.pitunnel.com/)
 - [piPS4Controller](https://www.youtube.com/watch?v=CeyGP3_kKZI); [webpage](https://pypi.org/project/pyPS4Controller/)
 - [PWM via GPIO pins](https://www.youtube.com/watch?v=9tActipVqIM)
+- [Connect Bluetooth Device](https://forums.raspberrypi.com/viewtopic.php?t=214373)
