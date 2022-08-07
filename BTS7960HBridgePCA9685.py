@@ -88,10 +88,10 @@ def setMode(mode):
    if mode == "reverse":
          io.output(motor_in1_pin, True)
          io.output(motor_in2_pin, False)
-      elif  mode == "forward":
+   elif  mode == "forward":
          io.output(motor_in1_pin, False)
          io.output(motor_in2_pin, True)
-      else:
+   else:
          io.output(motor_in1_pin, False)
          io.output(motor_in2_pin, False)
 
