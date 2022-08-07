@@ -1,4 +1,5 @@
 # Gas geben mit R2, Rückwärts L2, Kreis setzt Geschwindigkeit auf 0, PS-Taste beendet Motor Treiber
+# Lenken mit linkem Stick (servo kanäle beachten)
 from pyPS4Controller.controller import Controller
 #
 #importiere verschiedene Python Klassen
@@ -14,6 +15,8 @@ import BTS7960HBridgePCA9685 as HBridge
 
 print("Strg + C zum beenden")
 
+# Räder gerade stellen
+HBridge.setTurn(375)
 
 class MyController(Controller):
 
@@ -51,6 +54,24 @@ class MyController(Controller):
     def on_circle_press(self):
        print("Speed = 0")
        HBridge.setSpeed(0)
+
+    def on_L3_right(self, value):
+       winkel = 0.00703125*value + 375
+       print("rechts lenken")
+       if winkel > 600:
+          winkel = 600
+       HBridge.setTurn(winkel)
+
+    def on_L3_left(self, value):
+       winkel = 0.00703125*value + 375
+       print("links lenken")
+       if winkel < 150:
+          winkel = 150
+       HBridge.setTurn(winkel)
+       print(winkel)
+
+    def on_L3_x_at_rest(self):
+       HBridge.setTurn(375)
 
     def on_playstation_button_press(self):
        print("Exit")
