@@ -1,6 +1,6 @@
-# Gas geben mit R2, Kreis setzt Geschwindigkeit auf 0, PS-Taste beendet Motor Treiber
+# Gas geben mit R2, Rückwärts L2, Kreis setzt Geschwindigkeit auf 0, PS-Taste beendet Motor Treiber
 from pyPS4Controller.controller import Controller
-
+#
 #importiere verschiedene Python Klassen
 import sys, tty, termios, os
 
@@ -31,6 +31,20 @@ class MyController(Controller):
        print("Geschwindigkeit:", speed)
 
     def on_R2_release(self):
+       print("Motor aus")
+       HBridge.setSpeed(0)
+
+    def on_L2_press(self, value):
+       speed = -(0.000015625*value + 0.5)
+       print("Rückwärts")
+       if speed < -1:
+          speed = -1
+       if speed > 0:
+          speed = 0
+       HBridge.setSpeed(speed)
+       print("Geschwindigkeit:", speed)
+
+    def on_L2_release(self):
        print("Motor aus")
        HBridge.setSpeed(0)
 
