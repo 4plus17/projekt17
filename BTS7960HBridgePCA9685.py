@@ -143,3 +143,11 @@ def exit():
    PCA9685_pwm.set_pwm(0, 0, 0)
    PCA9685_pwm.set_pwm(1, 0, 0)
 # Ende des Programmes
+
+def setTurn(angle):
+   int(angle)
+   if angle > 0:
+      turn = int(angle)
+      PCA9685_pwm.set_pwm(4, 0, turn)
+   else:
+      PCA9685_pwm.set_pwm(4, 0, 375)
