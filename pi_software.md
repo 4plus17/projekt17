@@ -21,5 +21,5 @@ Passwort: 17
 - [PWM via GPIO pins](https://www.youtube.com/watch?v=9tActipVqIM)
 - [Connect Bluetooth Device](https://forums.raspberrypi.com/viewtopic.php?t=214373)
 
-
+Motor MY1016 (24V 11.5A max)
 ![my1016b2_280W_24V_KL](https://user-images.githubusercontent.com/108631209/183409379-666487b6-4dbc-4b9f-bdb2-8822ab1656fa.jpg)
