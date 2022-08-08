@@ -23,3 +23,8 @@ Passwort: 17
 
 Motor MY1016 (24V 11.5A max)
 ![my1016b2_280W_24V_KL](https://user-images.githubusercontent.com/108631209/183409379-666487b6-4dbc-4b9f-bdb2-8822ab1656fa.jpg)
+
+
+PS4 Controller MAC: [Wireless Controller]# paired-devices
+Device 70:20:84:5F:11:5D Wireless Controller
+
